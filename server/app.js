@@ -15,7 +15,7 @@ console.log("categoryList: >>", categoryList);
 
 app.get("/", (req, res) => {
     res.status(200).send({categoryList});
-});
+}); 
 
 app.post("/subscriber/:categoryId", (req, res) => {
     if (req.params.categoryId && req.body.subscriber) {
@@ -41,7 +41,7 @@ app.post("/subscriber/:categoryId", (req, res) => {
         
 
      });
-    app.post("/send_notification/:categoryId",(req,res)=>{ 
+    app.post("/send_notification/:categoryId",(req,res)=>{  
         
 
     });
